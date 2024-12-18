@@ -1,0 +1,200 @@
+body {
+	background-color: black;
+	margin: 0;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navdiv{
+	display: flex;
+	align-items: center;
+	 justify-content: space-around;
+
+}
+
+.nav .logo {
+    float: left;
+   padding: 5px 10px;
+    height: 50px;
+}
+
+.nav a:hover {
+     transition: all .1s ease-in;
+  background-color: red;
+}
+
+.image {
+  max-width: 100%;
+  max-height:100%;
+}
+
+video {
+  padding: 10px 30px;
+}
+
+.nav a {
+  float: left;
+  list-style: none;
+  font-family: Impact;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 25px;
+}
+  
+@keyframes fadein {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.content {
+	display: inline-block;
+	 margin-top: 40px;
+	  padding: 50px;
+    animation: 1.5s fadein;
+  } 
+  
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+h1:first-of-type {
+ text-align: center;
+ color: red;
+}
+
+h1:first-of-type:hover {
+	transition: all .1s ease-in;
+  	background-color: red;
+  	color: black;
+}
+
+
+.text {
+	display: inline-block;
+	padding-left: 42px;
+	color: white;
+	font-family: Calibri;
+	text-align: left;
+}
+
+.link {
+	display: inline-block;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	margin: 20px 0;
+	font-size:50px;
+}
+
+ .link:hover {
+	display: inline-block;
+            text-decoration: none;
+	transition: all .1s ease-in;
+  	background-color: red;
+        }
+
+
+h1 { 
+font-family: Impact;
+color: white;
+font-size: 50px;
+}
+
+
+p {
+font-family: Calibri;
+color: white;
+font-size: 25px;
+}
+
+
+.imagesexample {
+  align: right;
+  padding-top: 30px;
+  padding-right: 120px;
+  padding-left: 300px;
+}
+
+
+.logosprite {
+	display: inline-block;
+	background-image: url('../images/sprites.png');
+	background-position: -4px -2px;
+	width: 35px;
+	height: 41px;
+        background-repeat: no-repeat;
+}
+
+.issuesprite {
+	display: inline-block;
+	background-image: url('../images/sprites.png');
+	background-position: -3px -49px;
+		width: 72px;
+	height: 19px;
+	  transform: translateY(-5px); 
+        background-repeat: no-repeat;
+}
+
+.targetsprite {
+	display: inline-block;
+	background-image: url('../images/sprites.png');
+	background-position: -5px -80px;
+		width: 84px;
+	height: 21px;
+	  transform: translateY(-26px); 
+        background-repeat: no-repeat;
+}
+
+.whysprite {
+	display: inline-block;
+	background-image: url('../images/sprites.png');
+	background-position: -4px -111px;
+		width: 64px;
+	height: 23px;
+	  transform: translateY(-47px); 
+        background-repeat: no-repeat;
+}
+
+.soldieranim {
+  width: 670px;
+  height: 124px;
+  margin: 2% auto;
+  background: url('../images/soldiersrun.png');
+  animation: run .7s steps(6) infinite;
+  filter: grayscale(100%)
+}
+
+@keyframes run {
+  100% { background-position: -768px; }
+}
+
+
+img[alt*="war"] {
+border: 3px solid red;
+}
+
+img[alt*=peace] {
+border: 3px solid green;
+}
